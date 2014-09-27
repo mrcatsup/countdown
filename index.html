@@ -12,8 +12,10 @@
 			var now = moment();
 			var departure = moment("24-10-2014 13:00", "MM-DD-YYYY HH:mm");
 
-			var secondsUntilDeparture = departure - now;
-			alert(secondsUntilDeparture);
+			//var secondsUntilDeparture = departure - now;
+			alert('Days' + now.diff(departure, 'days'));
+			alert('Weeks' + now.diff(departure, 'weeks'));
+			
 			var clock = $('.clock').FlipClock(secondsUntilDeparture, {
 				clockFace: 'DailyCounter',
 				countdown: true
