@@ -10,7 +10,7 @@
 		<script src="/countdown/js/moment.js"></script>
 		<script type="text/javascript">
 			var now = moment();
-			var departure = moment({ year :2014, month :10, day :24, hour :13, minute :0})
+			var departure = moment("24-10-2014 13:00", "MM-DD-YYYY hh:mm");
 
 			var secondsUntilDeparture = departure.diff(now, 'seconds');
 		
