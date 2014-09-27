@@ -12,7 +12,7 @@
 			var now = moment();
 			var departure = moment("24-10-2014 13:00", "MM-DD-YYYY hh:mm");
 
-			var secondsUntilDeparture = departure.diff(now, 'seconds');
+			var secondsUntilDeparture = now.diff(departure, 'seconds');
 		
 			var clock = $('.clock').FlipClock(secondsUntilDeparture, {
 				clockFace: 'DailyCounter',
