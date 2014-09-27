@@ -9,7 +9,8 @@
 		<script src="/countdown/js/flipclock.js"></script>
 		<script src="/countdown/js/moment.js"></script>
 		<script type="text/javascript">
-			var secondsUntilDeparture = moment("20141024 13:00", "YYYYMMDD hh:mm").fromNow();
+			var secondsUntilDeparture = moment({ year :2014, month :10, day :24, hour :13, minute :0}).fromNow();
+			
 			alert(secondsUntilDeparture);
 		
 			var clock = $('.clock').FlipClock(3600 * 24 * 3, {
