@@ -6,6 +6,11 @@
 		<div class="your-clock"></div>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<script src="/js/flipclock.js"></script>
-		<script></script>
+		<script type="text/javascript">
+			var clock = $('.clock').FlipClock(3600 * 24 * 3, {
+				clockFace: 'DailyCounter',
+				countdown: true
+			});
+		</script>
 	</body>
 </html>
